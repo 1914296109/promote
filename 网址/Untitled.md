@@ -9,3 +9,10 @@
 `生成代码块`	https://snippet-generator.app/
 
 `JavaScript 实用工具库`	https://www.lodashjs.com/
+
+```plantuml
+@startmindmap
+* 设计模式
+** 面向对象
+@endmindmap
+```
