@@ -27,6 +27,6 @@ const router = require('./16.apiRouter')
 app.use('/api',router)
 
 // 3. 启动服务器
-app.listen(80, () => {
+app.listen(8080, () => {
     console.log('ok');
 })

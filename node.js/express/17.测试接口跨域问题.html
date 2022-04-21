@@ -18,8 +18,8 @@
              $('#btnGET').on('click', function () {
                  $.ajax({
                      type: 'GET',
-                     url: 'http://127.0.0.1/api/get',
-                     data: {name: 'zs',age: 20},
+                     url: 'http://127.0.0.1:8080/api/get',
+                    //  data: {name: 'zs',age: 20},
                      success: function (res) {
                          console.log(res);
                      }
@@ -29,7 +29,7 @@
              $('#btnPOST').on('click', function () {
                  $.ajax({
                      type: 'POST',
-                     url: 'http://127.0.0.1/api/post',
+                     url: 'http://127.0.0.1:8080/api/post',
                      data: {name: 'zs',age: 20},
                      success: function (res) {
                          console.log(res);
@@ -40,7 +40,7 @@
              $('#btnDELETE').on('click', function () {
                  $.ajax({
                      type: 'DELETE',
-                     url: 'http://127.0.0.1/api/delete',
+                     url: 'http://127.0.0.1:8080/api/delete',
                      success: function (res) {
                          console.log(res);
                      }
@@ -50,7 +50,7 @@
              $('#btnJSONP').on('click', function () {
                  $.ajax({
                      type: 'GET',
-                     url: 'http://127.0.0.1/api/jsonp',
+                     url: 'http://127.0.0.1:8080/api/jsonp',
                      dataType: 'jsonp',
                      success: function (res) {
                          console.log(res);
