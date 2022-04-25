@@ -16,6 +16,8 @@
 ### 软件
 * [mac应用1](https://www.macwk.com/)
 * [mac应用2](https://www.macv.com/)
+* [插件小屋](https://www.chajianxw.com/)
+* 
 ### 办公
 
 * [figma](https://www.figma.com/) ---[login01](#账号密码01)
