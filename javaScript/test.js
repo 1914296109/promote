@@ -1,8 +1,11 @@
-let str = 'https://www.runoob.com/my test.php?name=ståle&car=saab'
-let a = encodeURIComponent(str)
-console.log(a,typeof a);
-
-const obj = {
-    name: 'dabai',
-    age: 18
-}
+let imgLisg = [{
+    path: '111'
+}, {
+    path: '222'
+},{
+    path: '333'
+}]
+const arr = imgLisg.map(item => {
+    return item.path
+})
+console.log(arr)

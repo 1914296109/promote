@@ -5,6 +5,8 @@
 ### study
 * [英语学习](https://www.youzack.com/)
 * [阿里云盘](https://www.aliyundrive.com/)
+* [代码干燥计划](https://drylint.com/)
+* [Typescript泛型](https://juejin.cn/post/6844904184894980104)
 
 ### 工具
 * [生成代码块](https://snippet-generator.app/)
@@ -12,8 +14,8 @@
 * [APIPost](https://console.apipost.cn/)----------[login01](#账号密码01)
 
 ### 软件
-* [mac应用1](www.macwk.com)
-* [mac应用2](www.macv.com)
+* [mac应用1](https://www.macwk.com/)
+* [mac应用2](https://www.macv.com/)
 ### 办公
 
 * [figma](https://www.figma.com/) ---[login01](#账号密码01)
@@ -27,13 +29,6 @@
 
 ### 谷歌访问助手
 * [Astar VPN](https://astarvpn.com/index.html)
-
-* [毒蘑菇css](https://color.dumogu.top/gradient/)
-* [animate](https://animate.style/)
-* [Ant Design Vue](https://www.antdv.com/components/overview-cn)
-
-
-
 
 
 
