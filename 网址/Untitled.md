@@ -7,6 +7,8 @@
 * [阿里云盘](https://www.aliyundrive.com/)
 * [代码干燥计划](https://drylint.com/)
 * [Typescript泛型](https://juejin.cn/post/6844904184894980104)
+* [vue3官网](https://staging-cn.vuejs.org/)
+* [vue3源码](https://github.com/vuejs/core)
 
 ### 工具
 * [生成代码块](https://snippet-generator.app/)
