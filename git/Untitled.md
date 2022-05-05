@@ -43,13 +43,23 @@
 7. 操作分支
 
    ```
-   git checkout 分支名   	 // 新建分支
-   git branch 分支名			 // 切换分支
-   git checkout -b 分支名	 // 新建并切换到分支(等同于上面两步)
+   git checkout 分支名   	 // 新建本地分支(无内容)
+   git branch 分支名	// 切换本地分支（没有时，创建以当前分支为根基的分支）
+   git checkout -b 分支名	 // 新建并切换到分支(无内容)
+   git branch -d 分支名    // 删除本地分支
    
    git push origin HEAD -u // 推送本地分支到远程仓库
    git branch -m 旧分支 新分支 	// 修改分支名称
    git push origin :旧分支  	  // 删除远程分支
+
+   git rebase -i HEAD~number  // 将dev分支中的number个提交化为一个提交
+   git rebase master  //dev基于master的，将master内容合并到自己修改之处
+   git status // 若有冲突 查看
+   git rebase --continue  // 解决冲突后，继续走完rebase
+
+   git checkout master  // 切换到master
+   git merge dev  // 将dev合并到master
+   git push origin master  // 合并完毕之后提交
    ```
 
 8. 将本地分支和远程分支合并关联
@@ -63,6 +73,8 @@
    ```
    git remote -v // 查看关联的所有仓库
    git remote add (name) (path)  // 添加一个远程仓库
+   git fetch <name>  // 拉取远程仓库代码
+   git remote set-url origin <path>  // 修改远程仓库
    ```
 
    
