@@ -43,9 +43,9 @@
 7. 操作分支
 
    ```
-   git checkout 分支名   	 // 新建本地分支(无内容)
-   git branch 分支名	// 切换本地分支（没有时，创建以当前分支为根基的分支）
-   git checkout -b 分支名	 // 新建并切换到分支(无内容)
+   git branch 分支名   	 // 新建本地分支
+   git checkout 分支名	// 切换本地分支
+   git checkout -b 分支名	 // 新建并切换到分支
    git branch -d 分支名    // 删除本地分支
    
    git push origin HEAD -u // 推送本地分支到远程仓库
