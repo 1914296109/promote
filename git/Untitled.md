@@ -76,8 +76,23 @@
    git fetch <name>  // 拉取远程仓库代码
    git remote set-url origin <path>  // 修改远程仓库
    ```
+   
+9. 删除分支
 
-
+   ```
+   git rm --cached filename // 仅仅删除远程分支文件，不删除本地文件
+   git rm filename  //  删除本地文件与远程分支文件
+   
+   git rm -r --cached directoryname // 删除远程文件夹directoryname
+   git rm -r directoryname  //  删除本地文件夹与远程分支文件夹
+   
+   git commit -m "delete remote file filename "
+   git push -u origin master(此处是当前分支的名字)
+   
+   
+   ```
+   
+   
 
 # 代码提交规范
 
