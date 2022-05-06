@@ -77,4 +77,23 @@
    git remote set-url origin <path>  // 修改远程仓库
    ```
 
-   
+
+
+# 代码提交规范
+
+- `feat` // 新增功能
+- `fix` // 修复 Bug
+- `perf` // 性能提升
+- `style` // 优化代码格式
+- `docs` // 编写文档
+- `test` // 编写测试
+- `refactor` // 代码重构
+- `build` // 编译打包
+- `ci` // 持续集成
+- `cd` // 持续部署
+- `chore` // 其他修改，比如构建流程
+- `revert` // 代码回滚
+- `workflow` // 工作流
+- `types` // 定义变量类型
+- `config` // 项目配置
+- `dependency` // 项目依赖
