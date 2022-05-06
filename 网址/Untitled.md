@@ -9,6 +9,7 @@
 * [Typescript泛型](https://juejin.cn/post/6844904184894980104)
 * [vue3官网](https://staging-cn.vuejs.org/)
 * [vue3源码](https://github.com/vuejs/core)
+* [谷歌插件文档](http://chrome.cenchy.com/)
 
 ### 工具
 * [生成代码块](https://snippet-generator.app/)
