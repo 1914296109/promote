@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            background: #000;
-        }
     </style>
 </head>
 <body>
-    <span class="aaa">哈哈</span>
+    <button onclick="log()">点击</button>
     <script>
-        let a = document.getElementsByClassName("aaa")
-        console.log(a);
+        let timer = 0
+
+        function log () {
+            clearTimeout(timer)
+        timer = setTimeout(() => {
+            console.log(999);
+        }, 1000);
+        }
     </script>
 </body>
 </html>

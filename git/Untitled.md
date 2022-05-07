@@ -92,6 +92,14 @@
    
    ```
    
+9. 取消更改
+
+   ```
+   git status
+   git restore <file>
+   git status
+   ```
+   
    
 
 # 代码提交规范
