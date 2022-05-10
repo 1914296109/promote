@@ -1,11 +1,6 @@
-let imgLisg = [{
-    path: '111'
-}, {
-    path: '222'
-},{
-    path: '333'
-}]
-const arr = imgLisg.map(item => {
-    return item.path
-})
-console.log(arr)
+function fn() {
+    console.log(this);
+    setTimeout(() => {
+        console.log(this);
+    }, 1000);
+}
