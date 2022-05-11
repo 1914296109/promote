@@ -28,7 +28,7 @@
           consoel.log(this)
       }
   }
-  fn() // obj
+  obj.eat() // obj
   ```
 
 ##### 3.显示绑定
@@ -39,7 +39,7 @@
   function fn () {
       console.log(this)
   }
-  fn().call('123')  //123  强制绑定后不可以再进行绑定
+  fn.call('123')  //123  强制绑定后不可以再进行绑定
   
   var a = fn().bind('456')
   a()  // 456

@@ -1,4 +1,4 @@
-### Git的使用
+###  Git的使用
 
 ***
 
@@ -94,13 +94,19 @@
    
 9. 取消更改
 
-   ```
+   ```shell
    git status
    git restore <file>
    git status
    ```
    
-   
+12. 更新远程分支，更新remote索引
+
+    ```shell
+    git fetch
+    ```
+
+    
 
 # 代码提交规范
 

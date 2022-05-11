@@ -1,6 +1,8 @@
-function fn() {
-    console.log(this);
-    setTimeout(() => {
-        console.log(this);
-    }, 1000);
-}
+function fn() {}
+
+let obj = {
+  name: "1",
+  age: 1,
+};
+let test = Object.keys(obj);
+console.log(test);
