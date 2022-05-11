@@ -20,9 +20,15 @@
         mount(vnode, document.querySelector('#app'))
 
         // 3.创建新的 vnode
-        const vnode1 = h('div',{ class: "coderwhy" }, '哈哈哈')
+        setTimeout(() => {
+        const vnode1 = h('div',{ class: "coderwhy" }, [
+            h("h2", null, "当前计数: 666"),
+            h("h2", null, "当前计数: 111"),
+            h("button", null, "-1")
+        ])
 
         patch(vnode, vnode1)
+        }, 2000);
 
     </script>
 </body>
