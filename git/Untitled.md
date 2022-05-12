@@ -103,7 +103,7 @@
 12. 更新远程分支，更新remote索引
 
     ```shell
-    git fetch
+    git 
     ```
 
     
