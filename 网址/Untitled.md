@@ -2,7 +2,12 @@
 
 ***
 
+# 常用
+
+- [chromeDNS](chrome://settings/security)
+
 ### study
+
 * [英语学习](https://www.youzack.com/)
 * [阿里云盘](https://www.aliyundrive.com/)
 * [代码干燥计划](https://drylint.com/)
@@ -12,6 +17,7 @@
 * [谷歌插件文档](http://chrome.cenchy.com/)
 * [前端面试题](https://q.shanyue.tech/)
 * [ES6](https://es6.ruanyifeng.com/)
+* [jest](https://www.jestjs.cn/)
 
 ### 工具
 * [生成代码块](https://snippet-generator.app/)

@@ -16,9 +16,11 @@
 
 2. 配置 redis
 
-```shell
-cd /usr/local/ect/
-vim redis.conf
-# 也可以找到文件夹 command+shift+G 输入/usr/local/ect/
-```
+   ```shell
+   cd /usr/local/ect/
+   vim redis.conf
+   # 也可以找到文件夹 command+shift+G 输入/usr/local/ect/
+   ```
+
+   
 

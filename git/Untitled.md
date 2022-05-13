@@ -51,12 +51,13 @@
    git push origin HEAD -u // 推送本地分支到远程仓库
    git branch -m 旧分支 新分支 	// 修改分支名称
    git push origin :旧分支  	  // 删除远程分支
-
+   git branch -dr [remote/branch] // 删除远程分支
+   
    git rebase -i HEAD~number  // 将dev分支中的number个提交化为一个提交
    git rebase master  //dev基于master的，将master内容合并到自己修改之处
    git status // 若有冲突 查看
    git rebase --continue  // 解决冲突后，继续走完rebase
-
+   
    git checkout master  // 切换到master
    git merge dev  // 将dev合并到master
    git push origin master  // 合并完毕之后提交
@@ -94,7 +95,7 @@
    
 9. 取消更改
 
-   ```shell
+   ```
    git status
    git restore <file>
    git status
@@ -102,11 +103,49 @@
    
 12. 更新远程分支，更新remote索引
 
-    ```shell
-    git 
+    ```
+    git fetch
     ```
 
+13. 打上版本号
+
+    ```shell
+    git tag v0.1.0
+    git push origin --tags
+    ```
+
+14. 查看提交提交记录
+
+    ```shell
+    git log // 历史记录
+    git log -p // 当前记录
+    git diff // 当前改动
+    ```
+
+15. 标签管理
+
+    ```shell
+    // 本地
+    git tag -l // 查看标签
+    git  tag -d [] // 删除
+    git tag -l | xargs git tag -d // 删除所有
+    git push origin <tagname> // 推送单个标签
+    git push origin --tags  // 推送全部未推送的标签
     
+    // 远程
+    git show-ref --tag  // 查看标签
+    git push origin :refs/tags/v1.1 // 删除
+    git push origin --delete tags v1.1 // 删除
+    git show-ref --tag | awk '/2018.*/{print ":" $2}' | xargs git push origin // 批量删除
+    ```
+    
+15. 回滚
+
+    ```shell
+    // 本地切换到要回滚的分支，之后：
+    git reset --hard  f7f4ecb2b2
+    // 再强制回滚远程的分支：
+    git push origin HEAD --force
 
 # 代码提交规范
 
