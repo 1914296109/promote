@@ -18,6 +18,7 @@
 * [前端面试题](https://q.shanyue.tech/)
 * [ES6](https://es6.ruanyifeng.com/)
 * [jest](https://www.jestjs.cn/)
+* [vue jest](https://test-utils.vuejs.org/guide/)
 
 ### 工具
 * [生成代码块](https://snippet-generator.app/)
