@@ -65,7 +65,7 @@ const {count} = storeToRefs(userData)
 // 1.直接修改
 userData.count++
 
-// 2.批量修改时使用，性能要好，只渲染一次
+// 2.批量修改时使用，性能要好，多个数据，只渲染一次
 userData.$patch(state => {
   state.count++
 })
