@@ -90,15 +90,6 @@
    git commit -m "delete remote file filename "
    git push -u origin master(此处是当前分支的名字)
    
-   
-   ```
-   
-9. 取消更改
-
-   ```
-   git status
-   git restore <file>
-   git status
    ```
    
 12. 更新远程分支，更新remote索引
@@ -142,8 +133,22 @@
 15. 回滚
 
     ```shell
+    // 恢复更改的文件
+    git restore <file>
+    
+    // 取消暂存区的文件
+    git reset HEAD 123
+    
     // 本地切换到要回滚的分支，之后：
-    git reset --hard  f7f4ecb2b2
+    git reset HEAD^            # 回退所有内容到上一个版本  
+    git reset HEAD^ hello.php  # 回退 hello.php 文件的版本到上一个版本  
+    git reset 052e           # 回退到指定版本
+    
+    // --hard 参数撤销工作区中所有未提交的修改内容，将暂存区与工作区都回到上一次版本，并删除之前的所有信息提交：
+    
+    git reset –hard HEAD~3  # 回退上上上一个版本  
+    git reset –hard bae128  # 回退到某个版本回退点之前的所有信息。 
+    git reset --hard origin/master    # 将本地的状态回退到和远程的一样 
     // 再强制回滚远程的分支：
     git push origin HEAD --force
 
