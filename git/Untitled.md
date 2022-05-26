@@ -90,15 +90,6 @@
    git commit -m "delete remote file filename "
    git push -u origin master(此处是当前分支的名字)
    
-   
-   ```
-   
-9. 取消更改
-
-   ```
-   git status
-   git restore <file>
-   git status
    ```
    
 12. 更新远程分支，更新remote索引
@@ -142,8 +133,14 @@
 15. 回滚
 
     ```shell
+    // 放弃更改
+    git restore <file>
+    
+    // 取消暂存区的文件
+    git reset HEAD
+    
     // 本地切换到要回滚的分支，之后：
-    git reset --hard  f7f4ecb2b2
+    git reset --hard  f7f4ecb2b2 
     // 再强制回滚远程的分支：
     git push origin HEAD --force
 
