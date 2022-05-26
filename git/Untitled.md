@@ -137,7 +137,7 @@
     git restore <file>
     
     // 取消暂存区的文件
-    git reset HEAD
+    git reset HEAD 123
     
     // 本地切换到要回滚的分支，之后：
     git reset –hard HEAD~3  # 回退上上上一个版本  
