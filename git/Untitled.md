@@ -135,6 +135,8 @@
     ```shell
     // 恢复更改的文件
     git restore <file>
+    // 暂存区的文件撤回工作区 不撤销内容
+    git restore --staged <file>
     
     // 取消暂存区的文件
     git reset HEAD
