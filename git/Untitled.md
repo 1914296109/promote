@@ -133,14 +133,16 @@
 15. 回滚
 
     ```shell
-    // 放弃更改
+    // 恢复更改的文件
     git restore <file>
     
     // 取消暂存区的文件
     git reset HEAD
     
     // 本地切换到要回滚的分支，之后：
-    git reset --hard  f7f4ecb2b2 
+    git reset –hard HEAD~3  # 回退上上上一个版本  
+    git reset –hard bae128  # 回退到某个版本回退点之前的所有信息。 
+    git reset --hard origin/master    # 将本地的状态回退到和远程的一样 
     // 再强制回滚远程的分支：
     git push origin HEAD --force
 
