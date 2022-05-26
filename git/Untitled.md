@@ -137,7 +137,7 @@
     git restore <file>
     
     // 取消暂存区的文件
-    git reset HEAD 789
+    git reset HEAD
     
     // 本地切换到要回滚的分支，之后：
     git reset HEAD^            # 回退所有内容到上一个版本  
@@ -146,12 +146,13 @@
     
     // --hard 参数撤销工作区中所有未提交的修改内容，将暂存区与工作区都回到上一次版本，并删除之前的所有信息提交：
     
+    // 本地切换到要回滚的分支，之后：
     git reset –hard HEAD~3  # 回退上上上一个版本  
     git reset –hard bae128  # 回退到某个版本回退点之前的所有信息。 
     git reset --hard origin/master    # 将本地的状态回退到和远程的一样 
     // 再强制回滚远程的分支：
     git push origin HEAD --force
-
+    
 # 代码提交规范
 
 - `feat` // 新增功能
