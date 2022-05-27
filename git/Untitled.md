@@ -150,10 +150,21 @@
     
     // 本地切换到要回滚的分支，之后：
     git reset –hard HEAD~3  # 回退上上上一个版本  
-    git reset –hard bae128  # 回退到某个版本回退点之前的所有信息。 
+    git reset –hard  bae128  # 回退到某个版本回退点之前的所有信息。 
     git reset --hard origin/master    # 将本地的状态回退到和远程的一样 
     // 再强制回滚远程的分支：
     git push origin HEAD --force
+
+15. 解决冲突
+
+    ```shell
+    git stash  # 备份当前的工作区的内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中
+    git commit
+    git stash pop  # 从Git栈中读取最近一次保存的内容，恢复工作区的相关内容
+    在终端下依次输入上述代码就可以让服务器上的代码更新到了本地，而且你本地修改的代码也没有被覆盖
+    之后使用add，commit，push命令即可更新本地代码到服务器
+    ```
+    
     
 # 代码提交规范
 
