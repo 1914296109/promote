@@ -1,4 +1,4 @@
-const h = (tag, props, children) => {
+ const h = (tag, props, children) => {
   // vnode -> javascript -> {}
   return {
     tag,
@@ -18,7 +18,7 @@ const mount = (vnode, container) => {
       const value = vnode.props[key];
 
       if (key.startsWith("on")) {
-        el.addEventListener(key.slice(2).toLowerCase, value);
+        el.addEventListener(key.slice(2).toLowerCase(), value);
       } else {
         el.setAttribute(key, value);
       }

@@ -77,5 +77,6 @@ watchEffect(function () {
   console.log('2', info.count * info.count);
 });
 
-info.count = 1
+console.log(info.count);
+info.count = 10
 // dep.notify();

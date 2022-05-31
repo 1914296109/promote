@@ -19,6 +19,7 @@
 * [ES6](https://es6.ruanyifeng.com/)
 * [jest](https://www.jestjs.cn/)
 * [vue jest](https://test-utils.vuejs.org/guide/)
+* [vitest](https://cn.vitest.dev/)
 
 ### 工具
 * [生成代码块](https://snippet-generator.app/)
