@@ -20,6 +20,8 @@
 * [jest](https://www.jestjs.cn/)
 * [vue jest](https://test-utils.vuejs.org/guide/)
 * [vitest](https://cn.vitest.dev/)
+* [Type](https://typeorm.biunav.com/)
+* [loopback 4.0](https://loopback.io/doc/zh/lb4/)
 
 ### 工具
 * [生成代码块](https://snippet-generator.app/)
