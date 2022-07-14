@@ -165,7 +165,7 @@
     之后使用add，commit，push命令即可更新本地代码到服务器
     ```
     
-    
+17. [stash详解](https://jasonkayzk.github.io/2020/05/03/Git-Stash%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/)
 # 代码提交规范
 
 | 类型       | 说明                                |
