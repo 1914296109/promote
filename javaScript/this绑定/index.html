@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1. 默认绑定
+    function fn1 () {
+      console.log('1.默认绑定:',this);
+    }
+    fn1() // Window
+
+    // 2. 隐式绑定
+    var obj = {
+      name: '大白',
+      fn: function () {
+        console.log('2.隐式绑定:',this);
+      }
+    }
+    obj.fn()
+
+    // 3. 显示绑定
+    function fn2 (val1 = 1,val2 = 2,val3 = 3) {
+      console.log('3.显示绑定',this,'query:', val1,val2,val3);
+    }
+
+   fn2.call('call','call1','call2')
+   fn2.apply('apply',['apply1','apply2'])
+   fn3 = fn2.bind('bind','bind1','bind2')
+   // bind 可进行二次传参
+   fn3('bind3')
+
+  // 4. new绑定
+  class CASS {
+    name = '大白'
+    constructor () {
+      console.log('4.new绑定',this);
+    }
+  }
+  fn4 = new CASS()
+  </script>
+</body>
+</html>
