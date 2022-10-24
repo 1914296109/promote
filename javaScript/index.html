@@ -9,11 +9,17 @@
     </style>
 </head>
 <body>
-    <div class="demo">1</div>
-    <div class="demo">2</div>
-    <div class="demo">3</div>
-    <button onclick="fn()">点击</button>
+    <script>
+        function fn(a) {
+            console.log(thiws,1);
+            return function fn2 () {
+                console.log(this,2);
+            }
+        }
+        fn ()()
+    </script>
     <script src="./test.js">
+
     </script>
 </body>
 </html>
