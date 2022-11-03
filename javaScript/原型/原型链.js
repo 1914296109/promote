@@ -11,6 +11,9 @@ function Student (hobby) {
 
 Student.prototype = p
 
+// 直接赋值原型的话 后面在子类原型上加的方法会直接加到父级 不合理
+// Student.prototype = Person.prototype
+
 var stu1 = new Student('swimming')
 var stu2 = new Student('swimming')
 
