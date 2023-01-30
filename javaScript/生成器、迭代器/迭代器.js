@@ -9,18 +9,21 @@ class Classroom {
         this.students.push(newStudent)
     }
 
-    [Symbol.iterator]() {
-        let index = 0
-        return {
-            next: () => {
-                if (index < this.students.length) {
-                    return { done: false, value: this.students[index++] }
-                } else {
-                    return { done: true, value: undefined }
-                }
-            }
-        }
-
+    // [Symbol.iterator]() {
+    //     let index = 0
+    //     return {
+    //         next: () => {
+    //             if (index < this.students.length) {
+    //                 return { done: false, value: this.students[index++] }
+    //             } else {
+    //                 return { done: true, value: undefined }
+    //             }
+    //         }
+    //     }
+    // }
+    // 生成器替代迭代器
+    *[Symbol.iterator]() {
+        yield* this.students
     }
 }
 
